@@ -1,0 +1,73 @@
+% // Esta apresentação -- desenvolvida por Sérgio Mendonça -- está licenciada
+% // com uma Licença Creative Commons -- Atribuição (BY) -- Não Comercial (NC)
+% // -- Compartilha Igual (SA) 4.0 Internacional. Baseado no trabalho
+% // disponível em: https://github.com/sftom/templates/ufpe/researchdiary
+% //
+% // +---------------------------------------------------+
+% // | Universidade Federal de Pernambuco                |
+% // | Centro de Tecnologia e Geociencias                |
+% // | Programa de Pos-Graduacao em Engenharia Eletrica  |
+% // | Sergio Mendonca -- http://bcc.uag.ufrpe.br/~sftom |
+% // +---------------------------------------------------+
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[brazil]{babel}
+\newcommand{\workingDate}{\textsc{2015}}
+\newcommand{\userName}{Sergio Mendonca}
+\newcommand{\institution}{UFPE $|$ PPGEE}
+\usepackage{researchdiary_png}
+
+\begin{document}
+\univlogo
+
+\title{Diário da Pesquisa - Exemplo de Entrada}
+
+{\Huge Abril, 8}\\[5mm]
+
+\textit{N.B.: A seguir, temos um exemplo de uma entrada (registro) de um assunto estudado para compor o Diário da Pesquisa de Sérgio Mendonça}
+
+\section*{Análise de Fourier}
+
+\subsection*{Ajuste de curvas com funções senoidais}
+
+Uma função periódica $f(t)$ é uma para a qual
+
+\begin{equation}
+	f(t) = f(t + T)
+\label{eq:funcaoperiodica}
+\end{equation}
+
+onde $T$ é uma constante chamada \textit{período}, que é o menor intervalo de tempo para o qual a Equação (\ref{eq:funcaoperiodica}) é válida. Exemplos comuns incluem tanto sinais artificiais como naturais.
+
+As mais fundamentais são as funções senoidais. Na presente discussão, será usado o termo \textit{senoide} para representar qualquer forma ondulatória que possa ser descrita por um seno ou um cosseno. Não existe nenhuma convenção bem estabelecida para escolher uma das duas funções e, de todo modo, os resultados seriam idênticos, porque as duas funções estão simplesmente delocadas no tempo por $\pi/2$ radianos. Usaremos o cosseno, que pode ser representado, em geral por
+
+\begin{equation}
+	f(t) = A_{0} + C_{1}\cos(\omega_{0}t + \theta)
+\label{eq:cosseno}
+\end{equation}
+
+Uma inspeção da Equação (\ref{eq:cosseno}) indica que quatro parâmetros servem para caracterizar unicamente a senoide:
+
+\begin{itemize}
+	\item O \textit{valor médio} $A_{0}$ determina a altura média acima da abscissa.
+	\item A \textit{amplitude} $C_{1}$ especifica a altura da oscilação.
+	\item A \textit{frequência angular} $\omega_{0}$ caracteriza com que frequência os ciclos ocorrem.
+	\item O \textit{ângulo de fase} (ou \textit{deslocamento de fase}) $\theta$ parametriza a extensão pela qual a curva senoidal está deslocada horizontalmente.
+\end{itemize}
+
+Observe que a \textit{frequência angular} (em radianos/tempo) está relacionada com a \textit{frequência f} (em ciclos/tempo)\footnote{Quando o tempo está em segundos, a unidade para a frequência é um ciclo/s ou \textit{Hertz} (Hz).} por
+
+\begin{equation}
+	\omega_{0} = 2\pi f
+\end{equation}
+
+
+\newpage
+     \begin{figure}[ht]
+          \centering
+          \caption{\label{fig:by-nc-sa} Creative Commons Licence}
+          \includegraphics[width=0.3\textwidth]{img/by-nc-sa.jpg}
+      \end{figure} 
+      Este Diário da Pesquisa (Research Diary) -- desenvolvido por Sérgio Mendonça -- está licenciado com uma Licença Creative Commons -- Atribuição (BY) -- Não Comercial (NC) -- Compartilha Igual (SA) 4.0 Internacional. Baseado no trabalho disponível em:\newline \href{https://github.com/sftom/ufpe/researchdiary}{https://github.com/sftom/templates/ufpe/researchdiary}
+
+\end{document}
